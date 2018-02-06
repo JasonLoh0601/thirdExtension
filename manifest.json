@@ -1,0 +1,31 @@
+{
+  "description": "Adds a browser action icon to the toolbar. the Chinese Calendar will display when you click the button",
+  "manifest_version": 2,
+  "name": "Chinese Calendar",
+  "version": "1.0",
+  "icons": {
+    "48": "calendar.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+
+
+  "browser_action": {
+    "default_icon": "calendar.png",
+    "theme_icons": [{
+        "light": "calendar.png",
+        "dark": "celendar.png",
+        "size": 32
+    }],
+
+      "default_title": "Chinese Calendar",
+        "default_popup": "index.html"
+      },
+
+        "web_accessible_resources": [
+          "firefox/chineseCalendar/calendar.png"
+        ]
+}
